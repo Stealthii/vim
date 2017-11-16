@@ -1,7 +1,43 @@
-"Pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim "Decided to stick it
-execute pathogen#infect()
-execute pathogen#helptags()
+"vim-plug
+runtime plugged/vim-plug/plug.vim "Decided to stick it
+call plug#begin()
+Plug 'AndrewRadev/sideways.vim'
+Plug 'Chiel92/vim-autoformat'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'airblade/vim-gitgutter'
+Plug 'alfredodeza/coveragepy.vim'
+Plug 'blueshirts/darcula'
+Plug 'chrisbra/csv.vim'
+Plug 'digitaltoad/vim-jade'
+Plug 'fholgado/minibufexpl.vim'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
+Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/vim-plug'
+Plug 'kien/ctrlp.vim'
+Plug 'klen/python-mode'
+Plug 'majutsushi/tagbar'
+Plug 'mattn/emmet-vim'
+Plug 'rkulla/pydiction'
+Plug 'rstacruz/sparkup'
+Plug 'scrooloose/nerdtree'
+Plug 'sickill/vim-pasta'
+Plug 'thomwiggers/vim-colors-solarized'
+Plug 'tomtom/tcomment_vim'
+Plug 'tomtom/tlib_vim'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-speeddating'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'yazug/vim-taglist-plus'
+call plug#end()
 
 let g:solarized_termtrans = 1
 let g:solarized_contrast = "high"
