@@ -92,13 +92,13 @@ let g:pymode_lint_ignore = "" "Clean motherfuckers
 nmap <F2>      :qa <CR>| " F2 Get the fuck out
 vmap <F2> <Esc>:qa <CR>
 omap <F2> <Esc>:qa <CR>
-map! <F2> <Esc>:qa <CR>
+imap <F2> <Esc>:qa <CR>
 
 "Tagbar
 nmap <F3>      :TagbarToggle <CR>| " F3 Tagbar
 vmap <F3> <Esc>:TagbarToggle <CR>
 omap <F3> <Esc>:TagbarToggle <CR>
-map! <F3> <Esc>:TagbarToggle <CR>
+imap <F3> <Esc>:TagbarToggle <CR>
 
 "Sideways
 nnoremap <c-h> :SidewaysLeft<cr>
