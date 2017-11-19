@@ -15,9 +15,9 @@ Plug 'digitaltoad/vim-jade'
 Plug 'fholgado/minibufexpl.vim'
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
+Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-plug'
-Plug 'kien/ctrlp.vim'
 Plug 'klen/python-mode'
 Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
@@ -87,6 +87,14 @@ filetype plugin indent on
 " =============
 " Plugin Config
 " =============
+
+" FZF
+set rtp+=/usr/local/opt/fzf
+set rtp+=~/.fzf
+nmap ; :Buffers<CR>
+nmap <Leader>r :Tags<CR>
+nmap <Leader>t :Files<CR>
+nmap <Leader>a :Ag<CR>
 
 " Pydiction
 let g:pydiction_location = '/home/dan.porter/.vim/bundle/pydiction/complete-dict'
