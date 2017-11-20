@@ -21,6 +21,7 @@ Plug 'junegunn/vim-plug'
 Plug 'klen/python-mode'
 Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
+Plug 'mileszs/ack.vim'
 Plug 'rkulla/pydiction'
 Plug 'rstacruz/sparkup'
 Plug 'scrooloose/nerdtree'
@@ -95,6 +96,9 @@ nmap ; :Buffers<CR>
 nmap <Leader>r :Tags<CR>
 nmap <Leader>t :Files<CR>
 nmap <Leader>a :Ag<CR>
+
+" ack.vim
+let g:ackprg = 'ag --vimgrep' " Tell ack.vim to use ag instead
 
 " Pydiction
 let g:pydiction_location = '/home/dan.porter/.vim/bundle/pydiction/complete-dict'
