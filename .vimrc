@@ -19,6 +19,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-plug'
 Plug 'klen/python-mode'
+Plug 'lambdalisue/vim-pyenv'
 Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
 Plug 'mileszs/ack.vim'
@@ -132,6 +133,9 @@ let g:ale_sign_warning = '▲'
 let g:ale_sign_error = '✗'
 highlight link ALEWarningSign String
 highlight link ALEErrorSign Title
+
+" pyenv
+let g:pyenv#auto_activate = 1
 
 " ========
 " Bindings
