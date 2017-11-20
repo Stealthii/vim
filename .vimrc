@@ -40,6 +40,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'w0rp/ale'
 Plug 'yazug/vim-taglist-plus'
 call plug#end()
 
@@ -59,6 +60,7 @@ let g:airline#extensions#branch#enabled = 1 "vim-fugitive integration
 "let g:airline#extensions#tagbar#enabled = 1 "tagbar integration
 let g:airline#extensions#csv#enabled = 1 "csv.vim integration
 let g:airline#extensions#hunks#enabled = 1 "vim-gitgutter integration
+let g:airline#extensions#ale#enabled = 1 "ale integration
 
 set hidden "Keeps invisible buffers loaded
 set mouse=a "Enables mouse support
@@ -125,15 +127,11 @@ map <C-n> :NERDTreeToggle<CR>|" Ctrl+N for opening
 " vim-easy-align
 vmap <Enter> <Plug>(EasyAlign) " Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
 
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" ALE
+let g:ale_sign_warning = '▲'
+let g:ale_sign_error = '✗'
+highlight link ALEWarningSign String
+highlight link ALEErrorSign Title
 
 " ========
 " Bindings
